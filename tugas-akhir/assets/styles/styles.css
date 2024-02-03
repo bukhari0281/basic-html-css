@@ -1,0 +1,129 @@
+body {
+    margin: 0px;
+    color: white;
+    background-color: #DD5E4B;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 65px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+.container {
+    width: 90%;
+    margin-left: 55px;
+    margin-right: 55px;
+    /* margin-inline: 55px; */
+}
+
+.box-container {
+    display: flex;
+    margin-top: 45px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 33%;
+    text-align: center;
+}
+
+.navbar .box-container .box:nth-child(1) ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .box-container .box:nth-child(1) ul li {
+    list-style-type: none;
+    margin-right: 70px;
+}
+
+.navbar .box-container .box:nth-child(1) ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.navbar .box-container .box:nth-child(2) img {
+    width: 150px;
+}
+
+.navbar .box-container .box:nth-child(3) button {
+    color: white;
+    background-color: #DD5E4B;
+    border-color: white;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    border: 2px solid white;
+    pad: 20px;
+}
+
+.navbar .box-container .box:nth-child(3) {
+    text-align: right;
+}
+
+.navbar .box-container .box:nth-child(4) {
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    .navbar .box-container .box:nth-child(1) {
+        display: none;
+    }
+
+    .navbar .box-container .box:nth-child(3) {
+        display: none;
+    }
+
+    .navbar .box-container .box:nth-child(4) {
+        display: inline-block;
+    }
+
+    .navbar .box-container .box:nth-child(4) i {
+        font-size: 28px;
+    }
+
+    .navbar .box-container .box:nth-child(2) img {
+        width: 110px;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+}
+
+.section1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -106px;
+    background-image: linear-gradient(rgba(229, 212, 158, 0), rgba(221, 94, 75, 1)), url('../image/hero_image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+

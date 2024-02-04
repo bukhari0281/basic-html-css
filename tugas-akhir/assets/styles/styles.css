@@ -137,7 +137,84 @@ h2 {
 
 @media screen and (max-width: 700px) {
     .navbar .box-container .box:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 10px;
+        right: -150px;
+        background-color: white;
+        width: 170px;
+        border-radius: 10px;
+        opacity: 0;
+    }
+
+    .navbar .box-container .nav-menu.menu-active {
+        top: 100px;
+        right: 50px;
+
+        opacity: 1;
+    }
+
+    .navbar .box-container .box:nth-child(1) ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .navbar .box-container .box:nth-child(1) ul li {
+       margin-top: 2px;
+    }
+    .navbar .box-container .box:nth-child(1) ul li a:hover {
+       color: #ce4d39;
+    }
+    .navbar .box-container .box:nth-child(1) ul li a {
+        color: #DD5E4B;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .navbar .box-container .box:nth-child(3) {
         display: none;
+    }
+
+    .navbar .box-container .box:nth-child(4) {
+        display: inline-block;
+    }
+
+    .navbar .box-container .box:nth-child(4) i {
+        font-size: 28px;
+    }
+
+    .navbar .box-container .box:nth-child(2) img {
+        width: 110px;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar .box-container .box:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 30px;
+        background-color: #DD5E4B;
+        width: 150px;
+    }
+
+    .navbar .box-container .box:nth-child(1) ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navbar .box-container .box:nth-child(1) ul li a {
+        color: white;
+        font-size: 14px;
     }
 
     .navbar .box-container .box:nth-child(3) {

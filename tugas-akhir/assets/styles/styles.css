@@ -23,14 +23,9 @@ h1 {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 65px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-}
-
-
-.container {
-    margin: 0px 55px;
 }
 
 .box-container {
@@ -41,9 +36,8 @@ h2 {
     align-items: center;
 }
 
-.box {
-    width: 33%;
-    text-align: center;
+header .container {
+    padding: 0% 10%;
 }
 
 .navbar .box-container .box:nth-child(1) ul {
@@ -74,10 +68,10 @@ h2 {
     border-color: white;
     border-radius: 10px;
     color: white;
-    padding: 5px 10px;
+    padding: 10px 25px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     border: 2px solid white;
     pad: 20px;
 }
@@ -262,30 +256,31 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 100vh;
-    padding: 0px;
+    padding: 0px 55px;
     margin: 0px;
     margin-top: -106px;
+
+
     background-image: linear-gradient(rgba(229, 212, 158, 0), rgba(221, 94, 75, 1)), url('../image/hero_image.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+ 
 /* Hero Section */
 
-button {
+.section1 button {
     color: white;
     background-color: #DD5E4B;
-    border-color: white;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     color: white;
-    padding: 5px 10px;
+    padding: 10px 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 24px;
-    border: 2px solid white;
-    pad: 20px;
+    border: none;
 }
 
 /* Section 2 */
@@ -298,6 +293,10 @@ button {
     height: 80vh;
     align-items: center;
     justify-content: center;
+}
+   
+.section2 .container {
+    margin: 0px 55px;
 }
 
 .section2 > article {
@@ -317,14 +316,67 @@ button {
     align-items: center;
 }
 
-.section2 .box-container-2 .box-container-2 .box:nth-child(1) {
+.box-container-2 .box:nth-child(1) {
+    width: 100%;
     text-align: center;
 }
 
-.section2 .container-2 p {
-    padding: 0px 60px 0px 60px; 
+
+.box-container-2 .box:nth-child(2) {
+    width: 100%;
+    text-align: center;
+}
+
+
+.box-container-2 .p1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.box-container-2 .p2 {
+    font-size: 80px;
+    margin: 0px;
+    text-align: center;
+}
+
+.section2 .container > p {
+    /* padding: 0px 60px 0px 60px; */
     font-size: 24px;
     text-align: justify;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    width: 100%;
+    justify-content:baseline
+
+}
+
+.btn {
+    width: 100%;
+    text-align: end;
+}
+
+.rating i {
+    font-size: 70px;
+}
+
+.btn-tentang{
+    /* align-self: self-end; */
+    background-color: white;
+    color: #DD5E4B;
+    padding: 15px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    align-self: center;
+    /* text-align: end; */
 }
 
 .box {
@@ -356,23 +408,63 @@ button {
 }
 /* Section 2 */
 
+
+
 /* Section 3 */
-section > .section3 .container{
-    flex: 1;
+
+.flex {
     display: flex;
     flex-direction: row;
-    margin: 0px 55px 0px 55px;
-    height: 80vh;
     align-items: center;
-    /* justify-content: center; */
 }
 
-section > .section3 > .container > .box-container {
-    display: flex;
-    flex-direction: column;
+.flex .flex1:nth-child(1) {
+    /* padding-right: -55px; */
+    width: 40%;
+    text-align: left;
 }
 
-section > .section3 > .container > .box-container .box {
-    width: 10%;
+.flex .flex1:nth-child(2) {
+    /* padding-right: -55px; */
+    width: 60%;
+    text-align: left;
+    margin: 0% 10%;
+}
+
+.flex .flex1:nth-child(2) img {
+    height: 642px;
+}
+
+.flex .flex1:nth-child(2) p {
+    font-size: 24px;
+    text-align: justify;
 }
 /* Section 3 */
+
+/* Destinasi Section */
+.section4 {
+    background-image: linear-gradient(rgba(229, 212, 158, 0), rgba(221, 94, 75, 1)), url('../image/bg-kontak.svg');
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0% 10%;
+
+}
+
+
+
+.map {
+    width: 50%;
+}
+
+.contact {
+    width: 50%;
+}
+
+.contact ul {
+    text-decoration: none;
+}
+/* Destinasi Section */

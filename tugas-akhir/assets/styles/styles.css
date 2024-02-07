@@ -1,19 +1,21 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  
-  /* padding: 0px 20px 0px 20px; */
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 body {
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     color: white;
     background-color: #DD5E4B;
     font-family: 'Roboto', sans-serif;
-    align-items: center;
-    
+    display: block;
+    width: 100%;
+
 }
+
+
 
 h1 {
     font-size: 65px;
@@ -28,10 +30,7 @@ h2 {
 
 
 .container {
-    width: 90%;
-    margin-left: 55px;
-    margin-right: 55px;
-    /* margin-inline: 55px; */
+    margin: 0px 55px;
 }
 
 .box-container {
@@ -66,7 +65,7 @@ h2 {
 }
 
 .navbar .box-container .box:nth-child(2) img {
-    width: 150px;
+    width: 180px;
 }
 
 .navbar .box-container .box:nth-child(3) button {
@@ -83,6 +82,9 @@ h2 {
     pad: 20px;
 }
 
+.navbar .box-container .box:nth-child(2) {
+    text-align: center;
+}
 .navbar .box-container .box:nth-child(3) {
     text-align: right;
 }
@@ -292,19 +294,43 @@ button {
     flex: 1;
     display: flex;
     flex-direction: row;
-    margin-left: 55px;
-    margin-right: 55px;
-    width: 100%;
+    margin: 0px 55px;
     height: 80vh;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
 }
 
-/* article .container {
-    width: 90%;
+.section2 > article {
+    width: 605px;
+}
+
+.section2 > div {
+    text-align: center;
+    width: 605px;
+}
+
+.box-container-2 {
     display: flex;
-    flex: 1 1;
-}  */
+    margin-top: 45px;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section2 .box-container-2 .box-container-2 .box:nth-child(1) {
+    text-align: center;
+}
+
+.section2 .container-2 p {
+    padding: 0px 60px 0px 60px; 
+    font-size: 24px;
+    text-align: justify;
+}
+
+.box {
+    width: 33%;
+    text-align: center;
+}
 
 .section2 .box-container {
     padding-left: 300px;
@@ -328,7 +354,25 @@ button {
 .angka  {
     font-size: 80px;
 }
-
 /* Section 2 */
 
+/* Section 3 */
+section > .section3 .container{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 55px 0px 55px;
+    height: 80vh;
+    align-items: center;
+    /* justify-content: center; */
+}
 
+section > .section3 > .container > .box-container {
+    display: flex;
+    flex-direction: column;
+}
+
+section > .section3 > .container > .box-container .box {
+    width: 10%;
+}
+/* Section 3 */

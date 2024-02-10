@@ -410,7 +410,7 @@ main {
 
 
 
-/* Section 3 */
+/* About */
 .flex {
     display: flex;
     flex-direction: row;
@@ -438,16 +438,15 @@ main {
     font-size: 24px;
     text-align: justify;
 }
-/* Section 3 */
+/* About 3 */
 
-/* Destinasi Section */
+/* Kontak Section */
 .section4 {
     background-image: url('../image/bg-kontak.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 573px;
-    padding: 20px 0px;
+    padding: 70px 0px;
     align-items: center;
 }
 
@@ -459,12 +458,7 @@ main {
 .contact-container {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     margin: 0% 10%;
-    /* justify-content: center; */
-    align-self: center;
-    height: 275px;
-    /* background-color: black; */
 }
 
 .section4 .contact-container .map {
@@ -489,8 +483,9 @@ main {
     color: white;
     font-size: 20px;
 }
+/* Kontak Section */
 
-/* Destinasi Section */
+
 
 /* Blog */
 .section5 {

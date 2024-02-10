@@ -411,7 +411,6 @@ main {
 
 
 /* Section 3 */
-
 .flex {
     display: flex;
     flex-direction: row;
@@ -443,28 +442,147 @@ main {
 
 /* Destinasi Section */
 .section4 {
-    background-image: linear-gradient(rgba(229, 212, 158, 0), rgba(221, 94, 75, 1)), url('../image/bg-kontak.svg');
+    background-image: url('../image/bg-kontak.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 573px;
+    padding: 20px 0px;
+    align-items: center;
+}
+
+.section4 h2 {
+    padding: 0;
+    margin: 0;
 }
 
 .contact-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     margin: 0% 10%;
-
+    /* justify-content: center; */
+    align-self: center;
+    height: 275px;
+    /* background-color: black; */
 }
 
-
-
-.map {
-    width: 50%;
+.section4 .contact-container .map {
+    background-image: url('../image/map.svg');
+    width: 543px;
+    height: 275px;
 }
 
 .contact {
-    width: 50%;
+    text-align: start;
+    background-color: rgba(255, 255, 255, 0.13);
+    width: 543px;
+    height: 275px;
 }
 
-.contact ul {
+.contact table tr {
+    padding: 20px;
+
+}
+
+.contact td {
+    color: white;
+    font-size: 20px;
+}
+
+/* Destinasi Section */
+
+/* Blog */
+.section5 {
+    height: 70vh;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.blog-container img {
+    width: 318px;
+    height: 228px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-container h3 {
+    font-size:  16px;
+}
+
+.blog-container p {
+    font-size:  15px;
+    text-align: justify;
+}
+
+.container-1 {
+ 
+    width: 318px;
+
+}
+
+.container-2 {
+
+    width: 318px;
+
+}
+
+.container-3 {
+    width: 318px;
+    
+}
+/* Blog */
+
+/* Aside */
+aside {
+    width: 30%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px white;
+    color: #29627e;
+    padding: 0 30px;
+}
+
+aside h2 {
+    text-align: start;
+    font-size: 32px;
+    color: white;
     text-decoration: none;
 }
-/* Destinasi Section */
+
+aside .my-image {
+    width: 200px;
+    height: 200px;
+    background-image: url('../image/al bukhari.jpeg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: start;
+}
+/* Aside */
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 55px;
+    height: 100px;
+    background-color: #DB503B;
+}
+
+footer .sosmed i {
+    font-size: 20px;
+}
+
+footer p  {
+    text-align: center;
+}
+/* Footer */

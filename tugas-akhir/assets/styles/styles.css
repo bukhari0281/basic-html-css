@@ -212,38 +212,37 @@ main {
     text-align: justify;
 }
 
+.rating-dan-cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+
+}
+
 .rating {
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-align: justify;
-    width: 100%;
-    justify-content:baseline
-
+    /* text-align: justify; */
+    /* width: 100%; */
 }
 
-.btn {
-    width: 100%;
-    text-align: end;
+.rating-dan-cta a {
+    color: #DD5E4B;
+    background-color: #ffff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 0.2rem;
+    padding: 1.3rem 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    border: none;
 }
 
 .rating i {
     font-size: 70px;
-}
-
-.btn-tentang{
-    /* align-self: self-end; */
-    background-color: white;
-    color: #DD5E4B;
-    padding: 15px 20px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    border: none;
-    border-radius: 5px;
-    align-items: center;
-    align-self: center;
-    /* text-align: end; */
 }
 
 .box {
@@ -473,9 +472,70 @@ footer p  {
 
 /* Responsive */
 @media screen and (max-width: 1366px) {
-    html {
-        font-size: 75%;
+    /* NAVBAR */
+    .navbar .navbar-nav a {
+        font-size: 1rem;
     }
+    /* NAVBAR */
+
+    /* HERO Section */
+    .section1 h1 {
+        font-size: 2.5rem;
+    }
+    .section1 p {
+        font-size: 1rem;
+    }
+
+    .section1 {
+        height: 100vh;
+        margin-bottom: 1%;
+    }
+    /* HERO Section */
+
+    /* REPORT Section */
+    .section2 {
+        min-height: 100vh;
+    }
+
+    .section2 .container .description {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .section2 .p1 {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .section2 .p2 {
+        font-size: 3rem;
+        font-weight: 500;
+        padding: 0;
+    }
+
+    .section2 i {
+        font-size: 2rem;
+    }
+
+    .section2 a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .section2 a svg {
+
+        font-size: 1rem;
+    }
+
+    .section2 img {
+        height: 25rem;
+    }
+    /* REPORT Section */
+
 }
 
 @media screen and (max-width: 750px) {

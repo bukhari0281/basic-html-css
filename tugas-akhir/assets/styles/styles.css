@@ -90,7 +90,7 @@ header .container {
     transform: scaleX(1);
 }
 
-.navbar .navbar-kontak button {
+.navbar .navbar-kontak a  {
     color: white;
     background-color: #DD5E4B;
     border-color: white;
@@ -115,7 +115,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0px 55px;
     margin: 0px;
     margin-top: -106px;
@@ -127,20 +127,29 @@ main {
     background-position: center;
 }
 
+.section1 p {
+    font-size: 24px;
+}
+
+.section1 a {
+    display: inline-block;
+    color: white;
+    background-color: #DD5E4B;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 5rem;
+    color: white;
+    padding: 1.3rem 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    border: none;
+    text-decoration: none;
+    transition: 0.3s;
+}
  
 /* Hero Section */
 
-.section1 button {
-    color: white;
-    background-color: #DD5E4B;
-    /* border-radius: 10px; */
-    color: white;
-    padding: 10px 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    border: none;
-}
 
 /* Section 2 */
 .section2 {
@@ -467,30 +476,6 @@ footer p  {
     html {
         font-size: 75%;
     }
-    .navbar .box-container .box:nth-child(1) {
-        display: none;
-    }
-
-    .navbar .box-container .box:nth-child(3) {
-        display: none;
-    }
-
-    .navbar .box-container .box:nth-child(4) {
-        display: inline-block;
-    }
-
-    .navbar .box-container .box:nth-child(4) i {
-        font-size: 28px;
-    }
-
-    .navbar .box-container .box:nth-child(2) img {
-        width: 110px;
-    }
-
-    h1 {
-        font-size: 52px;
-        line-height: 1.2;
-    }
 }
 
 @media screen and (max-width: 750px) {
@@ -529,7 +514,7 @@ footer p  {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         font-size: 16px;
-        border: 0.2rem solid white;
+        border: 0.3rem solid white;
         text-decoration: none;
     }
 
@@ -548,7 +533,7 @@ footer p  {
     }
 
     .navbar .navbar-nav.active {
-        /* display: block; */
+        display: block;
         /* padding: 1rem 2rem; */
         right: 0;
     }
@@ -564,13 +549,14 @@ footer p  {
         content: '';
         display: block;
         /* padding-bottom: 0; */
-        border-bottom: 0.2rem solid white;
-        transform: scaleX(0);
+        border-bottom: 0.2rem solid #DB503B;
+        /* transform: scaleX(0); */
+        transform-origin: 0 0;
         transition: 0.2s linear;
     }
 
     .navbar .navbar-nav a:hover::after {
-        transform: scaleX(1);
+        transform: scaleX(0.5);
     }
 
     #menu-bar {

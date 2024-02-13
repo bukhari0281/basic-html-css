@@ -12,10 +12,7 @@ body {
     font-family: 'Roboto', sans-serif;
     display: block;
     width: 100%;
-
 }
-
-
 
 h1 {
     font-size: 65px;
@@ -40,17 +37,38 @@ header .container {
     padding: 0% 10%;
 }
 
-.navbar .box-container .box:nth-child(1) ul {
+.navbar {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
 }
 
-.navbar .box-container .box:nth-child(1) ul li {
-    list-style-type: none;
-    margin-right: 70px;
+.navbar .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
 }
 
-.navbar .box-container .box:nth-child(1) ul li a {
+.navbar .navbar-logo {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar .navbar-kontak {
+    flex: 1;
+    text-align: center;
+}
+
+#menu-bar {
+    display: none;
+}
+
+.navbar .navbar-nav a {
     text-decoration: none;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -58,11 +76,20 @@ header .container {
     font-weight: 400;
 }
 
-.navbar .box-container .box:nth-child(2) img {
-    width: 180px;
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    /* padding-bottom: 0; */
+    border-bottom: 0.2rem solid white;
+    transform: scaleX(0);
+    transition: 0.2s linear;
 }
 
-.navbar .box-container .box:nth-child(3) button {
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar .navbar-kontak button {
     color: white;
     background-color: #DD5E4B;
     border-color: white;
@@ -74,175 +101,6 @@ header .container {
     font-size: 20px;
     border: 2px solid white;
     pad: 20px;
-}
-
-.navbar .box-container .box:nth-child(2) {
-    text-align: center;
-}
-.navbar .box-container .box:nth-child(3) {
-    text-align: right;
-}
-
-.navbar .box-container .box:nth-child(4) {
-    display: none;
-}
-
-@media screen and (max-width: 1200px) {
-    .navbar .box-container .box:nth-child(1) {
-        display: none;
-    }
-
-    .navbar .box-container .box:nth-child(3) {
-        display: none;
-    }
-
-    .navbar .box-container .box:nth-child(4) {
-        display: inline-block;
-    }
-
-    .navbar .box-container .box:nth-child(4) i {
-        font-size: 28px;
-    }
-
-    .navbar .box-container .box:nth-child(2) img {
-        width: 110px;
-    }
-
-    h1 {
-        font-size: 52px;
-        line-height: 1.2;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .navbar .box-container .box:nth-child(1) {
-        display: none;
-    }
-
-    .navbar .box-container .box:nth-child(3) {
-        display: none;
-    }
-
-    .navbar .box-container .box:nth-child(4) {
-        display: inline-block;
-    }
-
-    .navbar .box-container .box:nth-child(4) i {
-        font-size: 28px;
-    }
-
-    .navbar .box-container .box:nth-child(2) img {
-        width: 110px;
-    }
-
-    h1 {
-        font-size: 32px;
-        line-height: 1.2;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .navbar .box-container .box:nth-child(1) {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 10px;
-        right: -150px;
-        background-color: white;
-        width: 170px;
-        border-radius: 10px;
-        opacity: 0;
-    }
-
-    .navbar .box-container .nav-menu.menu-active {
-        top: 100px;
-        right: 50px;
-
-        opacity: 1;
-    }
-
-    .navbar .box-container .box:nth-child(1) ul {
-        display: flex;
-        flex-direction: column;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    
-    .navbar .box-container .box:nth-child(1) ul li {
-       margin-top: 2px;
-    }
-    .navbar .box-container .box:nth-child(1) ul li a:hover {
-       color: #ce4d39;
-    }
-    .navbar .box-container .box:nth-child(1) ul li a {
-        color: #DD5E4B;
-        font-size: 20px;
-        font-weight: 500;
-    }
-
-    .navbar .box-container .box:nth-child(3) {
-        display: none;
-    }
-
-    .navbar .box-container .box:nth-child(4) {
-        display: inline-block;
-    }
-
-    .navbar .box-container .box:nth-child(4) i {
-        font-size: 28px;
-    }
-
-    .navbar .box-container .box:nth-child(2) img {
-        width: 110px;
-    }
-
-    h1 {
-        font-size: 32px;
-        line-height: 1.2;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .navbar .box-container .box:nth-child(1) {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100px;
-        right: 30px;
-        background-color: #DD5E4B;
-        width: 150px;
-    }
-
-    .navbar .box-container .box:nth-child(1) ul {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .navbar .box-container .box:nth-child(1) ul li a {
-        color: white;
-        font-size: 14px;
-    }
-
-    .navbar .box-container .box:nth-child(3) {
-        display: none;
-    }
-
-    .navbar .box-container .box:nth-child(4) {
-        display: inline-block;
-    }
-
-    .navbar .box-container .box:nth-child(4) i {
-        font-size: 28px;
-    }
-
-    .navbar .box-container .box:nth-child(2) img {
-        width: 110px;
-    }
-
-    h1 {
-        font-size: 32px;
-        line-height: 1.2;
-    }
 }
 
 main {
@@ -340,7 +198,6 @@ main {
 }
 
 .section2 .container > p {
-    /* padding: 0px 60px 0px 60px; */
     font-size: 24px;
     text-align: justify;
 }
@@ -438,7 +295,26 @@ main {
     font-size: 24px;
     text-align: justify;
 }
-/* About 3 */
+/* About */
+
+/* Destinasi */
+.section3 {
+    margin: 5% 0;
+}
+
+.section3 h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.img-destinasi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+
+}
+/* Destinasi */
 
 /* Kontak Section */
 .section4 {
@@ -459,6 +335,7 @@ main {
     display: flex;
     flex-direction: row;
     margin: 0% 10%;
+    justify-content: center;
 }
 
 .section4 .contact-container .map {
@@ -543,6 +420,7 @@ aside {
     box-shadow: inset 5px 0 5px -5px white;
     color: #29627e;
     padding: 0 30px;
+
 }
 
 aside h2 {
@@ -581,3 +459,121 @@ footer p  {
     text-align: center;
 }
 /* Footer */
+
+
+/* Responsive */
+@media screen and (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+    .navbar .box-container .box:nth-child(1) {
+        display: none;
+    }
+
+    .navbar .box-container .box:nth-child(3) {
+        display: none;
+    }
+
+    .navbar .box-container .box:nth-child(4) {
+        display: inline-block;
+    }
+
+    .navbar .box-container .box:nth-child(4) i {
+        font-size: 28px;
+    }
+
+    .navbar .box-container .box:nth-child(2) img {
+        width: 110px;
+    }
+
+    h1 {
+        font-size: 52px;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 60%;
+    }
+
+    .navbar-logo {
+        flex: 1;
+    }
+    .menu-bar {
+        flex: 1;
+        text-align: center;
+    }
+
+    .navbar .navbar-kontak {
+        display: none;
+    }
+    #menu-bar {
+        display: inline-block;
+    }
+    .navbar .menu-bar i {
+        font-size: 34px;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: white;
+        width: 30rem;
+        height: 100vh;
+    }
+    
+    .navbar .navbar-nav.menu-active {
+        right: 0;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 55%;
+    }
+
+
+    .navbar .box-container .box:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        right: 30px;
+        background-color: #DD5E4B;
+        width: 150px;
+    }
+
+    .navbar .box-container .box:nth-child(1) ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navbar .box-container .box:nth-child(1) ul li a {
+        color: white;
+        font-size: 14px;
+    }
+
+    .navbar .box-container .box:nth-child(3) {
+        display: none;
+    }
+
+    .navbar .box-container .box:nth-child(4) {
+        display: inline-block;
+    }
+
+    .navbar .box-container .box:nth-child(4) i {
+        font-size: 28px;
+    }
+
+    .navbar .box-container .box:nth-child(2) img {
+        width: 110px;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+}

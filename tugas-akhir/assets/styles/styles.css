@@ -43,14 +43,15 @@ header .container {
     justify-content: center;
     align-items: center;
     min-height: 100px;
+    padding: 00 55px;
 }
 
 .navbar .navbar-nav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     flex: 1;
 }
 
@@ -61,7 +62,7 @@ header .container {
 
 .navbar .navbar-kontak {
     flex: 1;
-    text-align: center;
+    text-align: end;
 }
 
 #menu-bar {
@@ -492,88 +493,150 @@ footer p  {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     html {
         font-size: 60%;
     }
 
-    .navbar-logo {
-        flex: 1;
-    }
-    .menu-bar {
-        flex: 1;
-        text-align: center;
+    /* NAVBAR */
+    .navbar {
+        display: flex;
+        align-items: center;
+        min-height: 70px;
     }
 
-    .navbar .navbar-kontak {
-        display: none;
+    .navbar .navbar-logo {
+        flex: 1;
+        text-align: start;
     }
-    #menu-bar {
-        display: inline-block;
+
+    .navbar .navbar-logo img {
+        height: 30px;
     }
-    .navbar .menu-bar i {
-        font-size: 34px;
+
+    .navbar-kontak {
+        flex: 1;
+        justify-content: end;
+    }
+
+    .navbar-kontak a {
+        color: white;
+        background-color: #DB503B;
+        border-color: white;
+        border-radius: 0.5rem;
+        color: white;
+        padding: 0.5rem 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        border: 0.2rem solid white;
+        text-decoration: none;
+    }
+
+    .navbar .bar {
+        margin-left: 2rem;
     }
 
     .navbar .navbar-nav {
         position: absolute;
-        top: 100%;
+        top: 7rem;
         right: -100%;
-        background-color: white;
-        width: 30rem;
+        background-color: #fff;
+        width: 20rem;
         height: 100vh;
+        transition: 0.3s;
     }
-    
-    .navbar .navbar-nav.menu-active {
+
+    .navbar .navbar-nav.active {
+        /* display: block; */
+        /* padding: 1rem 2rem; */
         right: 0;
     }
 
+    .navbar .navbar-nav a {
+        display: block;
+        font-size: 2rem;
+        color: #DB503B;
+        margin: 1.5rem;
+    }
+    
+    .navbar .navbar-nav a::after {
+        content: '';
+        display: block;
+        /* padding-bottom: 0; */
+        border-bottom: 0.2rem solid white;
+        transform: scaleX(0);
+        transition: 0.2s linear;
+    }
+
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(1);
+    }
+
+    #menu-bar {
+        display: inline-block;
+        color: white;
+        font-size: 26px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    /* NAVBAR */
+
+
+
+    /* HERO SECTION */
+    .section1 h1 {
+        font-size: 3rem;
+    }
+    /* HERO SECTION */
+
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     html {
         font-size: 55%;
     }
 
-
-    .navbar .box-container .box:nth-child(1) {
+    /* NAVBAR */
+    .navbar {
         display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100px;
-        right: 30px;
-        background-color: #DD5E4B;
-        width: 150px;
+        align-items: center;
+        min-height: 70px;
     }
 
-    .navbar .box-container .box:nth-child(1) ul {
-        display: flex;
-        flex-direction: column;
+    .navbar .navbar-logo {
+        flex: 1;
+        text-align: start;
+    }
+
+    .navbar .navbar-logo img {
+        height: 30px;
+    }
+
+    .navbar .bar {
+        flex: 1;
+        text-align:  end;
+    }
+
+    .navbar .navbar-nav {
+        display: block;
+        text-align: start;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fff;
+        width: 150px;
+        padding: 1rem 2rem;
+    }
+
+    .navbar .navbar-nav a {
+        font-size: 22px;
+        color: #DB503B;
     }
     
-    .navbar .box-container .box:nth-child(1) ul li a {
+    #menu-bar {
         color: white;
-        font-size: 14px;
+        font-size: 24px;
     }
-
-    .navbar .box-container .box:nth-child(3) {
-        display: none;
-    }
-
-    .navbar .box-container .box:nth-child(4) {
-        display: inline-block;
-    }
-
-    .navbar .box-container .box:nth-child(4) i {
-        font-size: 28px;
-    }
-
-    .navbar .box-container .box:nth-child(2) img {
-        width: 110px;
-    }
-
-    h1 {
-        font-size: 32px;
-        line-height: 1.2;
-    }
+    /* NAVBAR */
 }

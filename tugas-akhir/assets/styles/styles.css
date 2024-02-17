@@ -139,10 +139,10 @@ main {
     border-radius: 10px;
     margin-top: 5rem;
     color: white;
-    padding: 1.3rem 3rem;
+    padding: 0.5rem 1.2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: none;
     text-decoration: none;
     transition: 0.3s;
@@ -277,30 +277,31 @@ main {
 
 
 /* About */
-.about {
+.flex {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.about .flex1:nth-child(1) {
+.about .image {
     padding-right: 55px;
     width: 40%;
     text-align: left;
 }
 
-.about .flex1:nth-child(2) {
+.about .description {
     /* padding-right: -55px; */
     width: 60%;
     text-align: left;
-    margin: 0% 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.about .flex1:nth-child(2) img {
+.about .image img {
     height: 642px;
 }
 
-.about .flex1:nth-child(2) p {
+.about .description p {
     font-size: 24px;
     text-align: justify;
 }
@@ -375,7 +376,7 @@ main {
 
 /* Blog */
 .section5 {
-    height: 70vh;
+    min-height:auto;
 }
 
 .blog-container {
@@ -385,11 +386,39 @@ main {
     justify-content: center;
     gap: 1rem;
 }
-.blog-container img {
-    width: 318px;
-    height: 228px;
+
+.gambar-1 {
+    background-image: url('../image/sawah.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    height: 228px;
+    width: 318;
+}
+
+.gambar-2 {
+    background-image: url('../image/sawah.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 228px;
+    width: 318;
+}
+
+.gambar-3 {
+    background-image: url('../image/sawah.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 228px;
+    width: 318;
+}
+
+.blog-container img {
+    /* width: 318px; */
+    height: 228px;
+    background-repeat: no-repeat;
+    image-resolution: cover;
     background-position: center;
 }
 
@@ -403,7 +432,8 @@ main {
 }
 
 .container-1 {
- 
+    display: flex;
+    flex-direction: column;
     width: 318px;
 
 }
@@ -418,36 +448,27 @@ main {
     width: 318px;
     
 }
-/* Blog */
 
-/* Aside */
-aside {
-    width: 30%;
-    padding-left: 0.5rem;
-    margin-left: 0.5rem;
-    float: right;
-    box-shadow: inset 5px 0 5px -5px white;
-    color: #29627e;
-    padding: 0 30px;
-
+.section5 .tombol {
+    align-items: center;
+    text-align: center;
+    min-height: auto;
 }
 
-aside h2 {
-    text-align: start;
-    font-size: 32px;
-    color: white;
+.section5 .tombol a {
+    color: #DD5E4B;
+    background-color: #ffff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 0.2rem;
+    padding: 0.5rem 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
     text-decoration: none;
 }
 
-aside .my-image {
-    width: 200px;
-    height: 200px;
-    background-image: url('../image/al bukhari.jpeg');
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: start;
-}
-/* Aside */
+/* Blog */
 
 /* Footer */
 footer {

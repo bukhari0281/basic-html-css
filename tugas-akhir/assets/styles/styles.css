@@ -7,7 +7,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    color: white;
+    color: #FFFCF2;
     background-color: #DD5E4B;
     font-family: 'Roboto', sans-serif;
     display: block;
@@ -20,9 +20,12 @@ h1 {
 }
 
 h2 {
-    font-size: 65px;
+    font-size: 55px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    line-height: 4rem;
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -112,7 +115,6 @@ main {
     align-items: center;
     margin: 0;
     padding: 0;
-    margin-bottom: 10%;
 }
 
 /* Hero Section */
@@ -133,10 +135,6 @@ main {
     background-size: cover;
     background-position: center;
 }
-
-/* .section1 p {
-    font-size: 24px;
-} */
 
 .section1 a {
     display: inline-block;
@@ -235,16 +233,22 @@ main {
     /* width: 100%; */
 }
 
+.cta {
+    align-items: center;
+}
+
 .rating-dan-cta a {
-    color: #252422;
-    background-color: #CCC5B9;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-    border-radius: 0.2rem;
-    padding: 1.3rem 3rem;
+    display: inline-block;
+    color: #DD5E4B;
+    background-color: #FFFCF2;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 0.3rem;
+    padding: 0.5rem 2rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 1.5rem;
     border: none;
+    text-decoration: none;
 }
 
 .rating i {
@@ -274,16 +278,18 @@ main {
 }
 /* Section 2 */
 
-
-
 /* About */
 .flex {
     display: flex;
     align-items: center;
+    min-height: 50vh;
+    margin: 5% 0;
+    color: #DB503B;
+    background-color: #FFFCF2;
 }
 
 .about .image {
-    flex: 1 1 45rem;
+    flex: 1 1 35rem;
 }
 
 .about .description {
@@ -297,7 +303,6 @@ main {
 }
 
 .about .description p {
-    /* font-size: 24px; */
     text-align: justify;
 }
 /* About */
@@ -305,19 +310,15 @@ main {
 /* Destinasi */
 .section3 {
     /* margin: 10% 0; */
-    padding: 10% 5%;
-    background-color: #FFFCF2;
+    padding: 0 5%;
+    margin-bottom: 5%;
+    /* background-color: #FFFCF2; */
 }
 
 .section3 h2 {
-    color: #DB503B;
-    margin: 0;
+    /* color: #DB503B; */
+    margin: 0 0 1.5rem 0;
     text-align: center;
-}
-
-.section3 .img-destinasi p {
-    color: #DB503B;
-    font-size: 1.3rem;
 }
 
 .img-destinasi {
@@ -361,8 +362,7 @@ main {
 }
 
 .section4 h2 {
-    padding: 0;
-    margin: 0;
+    margin: 0 0 1.3rem 0;
 }
 
 .contact-container {
@@ -385,21 +385,12 @@ main {
     height: 275px;
     padding: 0 1rem;
 }
-
-.contact p {
-    color: white;
-    font-size: 1.6rem;
-}
 /* Kontak Section */
-
-
 
 /* Blog */
 .section5 {
     display: block;
-    /* flex-direction: column; */
-    min-height:fit-content;
-    min-height: auto;
+    padding: 5% 0;    
 }
 
 .blog-container {
@@ -445,6 +436,10 @@ main {
     background-position: center;
 }
 
+.section5 h2 {
+    margin: 0 0 1.3rem 0;
+}
+
 .blog-container h3 {
     font-size:  16px;
 }
@@ -477,16 +472,19 @@ main {
 }
 
 .section5 .tombol a {
+    display: inline-block;
     color: #DD5E4B;
-    background-color: #ffff;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-    border-radius: 0.2rem;
-    padding: 0.5rem 1.3rem;
+    background-color: #FFFCF2;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 0.3rem;
+    margin-top: 1.3rem;
+    padding: 0.5rem 2rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 1.5rem;
     border: none;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 /* Blog */

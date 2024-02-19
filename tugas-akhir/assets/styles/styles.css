@@ -25,6 +25,10 @@ h2 {
     text-align: center;
 }
 
+p {
+    font-size: 1.3rem;
+}
+
 .box-container {
     display: flex;
     margin-top: 45px;
@@ -130,19 +134,19 @@ main {
     background-position: center;
 }
 
-.section1 p {
+/* .section1 p {
     font-size: 24px;
-}
+} */
 
 .section1 a {
     display: inline-block;
     color: white;
     background-color: #DD5E4B;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    border-radius: 0.5rem;
     margin-top: 5rem;
     color: white;
-    padding: 0.5rem 1.2rem;
+    padding: 1rem 3rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
@@ -156,7 +160,6 @@ main {
 
 /* Section 2 */
 .section2 {
-    /* width: 400px; */
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -200,7 +203,7 @@ main {
 
 
 .box-container-2 .p1 {
-    font-size: 24px;
+    /* font-size: 24px; */
     text-align: center;
 }
 
@@ -210,8 +213,8 @@ main {
     text-align: center;
 }
 
-.section2 .container > p {
-    font-size: 24px;
+.section2 .container p {
+    /* font-size: 24px; */
     text-align: justify;
 }
 
@@ -233,8 +236,8 @@ main {
 }
 
 .rating-dan-cta a {
-    color: #DD5E4B;
-    background-color: #ffff;
+    color: #252422;
+    background-color: #CCC5B9;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
     border-radius: 0.2rem;
     padding: 1.3rem 3rem;
@@ -245,7 +248,8 @@ main {
 }
 
 .rating i {
-    font-size: 70px;
+    font-size: 50px;
+    color: #FFFCF2;
 }
 
 .box {
@@ -253,27 +257,20 @@ main {
     text-align: center;
 }
 
-.section2 .box-container {
-    padding-left: 300px;
+.section2 .box-container-2 {
+    padding-bottom: 1.3rem;
 }
 
-.section2 .container2 {
-    width: 100%;
-    /* align-items: center;
-    justify-content: center; */
+.section2 .container .box-container-2 .p1 {
+    text-align: center;
+    line-height: 1.5rem;
 }
-
-.section2 .container2 img {
-    width: 500px;
-    align-items: center;
-}
-
-.section2 .box-container p {
-    font-size: 24px;
-}
-
-.angka  {
+    
+.section2 .container .box-container-2 .p2  {
     font-size: 80px;
+    text-align: center;
+    line-height: 2rem;
+    /* margin-bottom: 2.5rem; */
 }
 /* Section 2 */
 
@@ -282,51 +279,75 @@ main {
 /* About */
 .flex {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
 .about .image {
-    padding-right: 55px;
-    width: 40%;
-    text-align: left;
+    flex: 1 1 45rem;
 }
 
 .about .description {
-    /* padding-right: -55px; */
-    width: 60%;
-    text-align: left;
+    flex: 1 1 42rem;
     margin-left: 5%;
     margin-right: 5%;
 }
 
 .about .image img {
-    height: 642px;
+    width: 100%;
 }
 
 .about .description p {
-    font-size: 24px;
+    /* font-size: 24px; */
     text-align: justify;
 }
 /* About */
 
 /* Destinasi */
 .section3 {
-    margin: 5% 0;
+    /* margin: 10% 0; */
+    padding: 10% 5%;
+    background-color: #FFFCF2;
 }
 
 .section3 h2 {
+    color: #DB503B;
     margin: 0;
     text-align: center;
+}
+
+.section3 .img-destinasi p {
+    color: #DB503B;
+    font-size: 1.3rem;
 }
 
 .img-destinasi {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 1rem;
-
+    gap: 1.2rem;
 }
+
+.img-destinasi img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.image-1 {
+    text-align: center;
+}
+
+.image-2 {
+    text-align: center;
+}
+
+.image-3 {
+    text-align: center;
+}
+
+.image-4 {
+    text-align: center;
+}
+
 /* Destinasi */
 
 /* Kontak Section */
@@ -362,16 +383,12 @@ main {
     background-color: rgba(255, 255, 255, 0.13);
     width: 543px;
     height: 275px;
+    padding: 0 1rem;
 }
 
-.contact table tr {
-    padding: 20px;
-
-}
-
-.contact td {
+.contact p {
     color: white;
-    font-size: 20px;
+    font-size: 1.6rem;
 }
 /* Kontak Section */
 
@@ -504,51 +521,20 @@ footer p  {
     /* NAVBAR */
 
     /* HERO Section */
-    .section1 h1 {
-        font-size: 2.5rem;
-    }
-    .section1 p {
-        font-size: 1rem;
-    }
-
     .section1 {
-        height: 100vh;
-        margin-bottom: 1%;
+        height: 50vh;
+        font-size: 74%;
+        /* margin-bottom: 1%;    */
     }
     /* HERO Section */
 
     /* REPORT Section */
     .section2 {
-        min-height: 100vh;
+        min-height: 50vh;
     }
 
     .section2 .container .description {
-        font-size: 1rem;
         padding: 0;
-    }
-
-    .section2 .p1 {
-        font-size: 1rem;
-        padding: 0;
-    }
-
-    .section2 .p2 {
-        font-size: 3rem;
-        font-weight: 500;
-        padding: 0;
-    }
-
-    .section2 i {
-        font-size: 2rem;
-    }
-
-    .section2 a {
-        display: inline-block;
-        text-decoration: none;
-        font-size: 1rem;
-        padding: 0.4rem 1rem;
-        align-items: center;
-        justify-content: end;
     }
 
     .section2 a svg {
@@ -560,6 +546,20 @@ footer p  {
         height: 25rem;
     }
     /* REPORT Section */
+
+    /* About */
+    #about {
+        min-height: 60vh;
+    }
+
+    .about .image img {
+        width: 600px;
+    }
+
+    .about .description p {
+        font-size: 1.4rem;
+    }
+    /* About */
 
 }
 

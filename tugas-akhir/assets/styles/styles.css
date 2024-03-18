@@ -98,17 +98,22 @@ header .container {
 }
 
 .navbar .navbar-kontak a  {
-    color: white;
-    background-color: #DD5E4B;
-    border-color: white;
-    border-radius: 10px;
-    color: white;
-    padding: 10px 25px;
+    display: inline-block;
+    color: #DD5E4B;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    padding: 0.7rem 2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 20px;
-    border: 2px solid white;
-    pad: 20px;
+    font-size: 1.5rem;
+    border: none;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar .navbar-kontak a:hover {
+    transform: scale(0.9);
 }
 
 main {
@@ -151,6 +156,10 @@ main {
     border: none;
     text-decoration: none;
     transition: 0.3s;
+}
+
+.section1 a:hover {
+    transform: scale(0.9);
 }
  
 /* Hero Section */
@@ -249,6 +258,11 @@ main {
     font-size: 1.5rem;
     border: none;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.rating-dan-cta a:hover {
+    transform: scale(0.9);
 }
 
 .rating i {
@@ -393,8 +407,7 @@ main {
 
 /* Blog */
 .section5 {
-    display: block;
-    padding: 5% 0;    
+    margin: 10% 10%;
 }
 
 .blog-container {
@@ -402,42 +415,13 @@ main {
     flex-direction: row;
     text-align: center;
     justify-content: center;
-    gap: 1rem;
-}
-
-.gambar-1 {
-    background-image: url('../image/sawah.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 228px;
-    width: 318;
-}
-
-.gambar-2 {
-    background-image: url('../image/sawah.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 228px;
-    width: 318;
-}
-
-.gambar-3 {
-    background-image: url('../image/sawah.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 228px;
-    width: 318;
+    gap: 1.3rem;
 }
 
 .blog-container img {
-    /* width: 318px; */
     height: 228px;
-    background-repeat: no-repeat;
-    image-resolution: cover;
-    background-position: center;
+    object-fit: cover;
+    object-position: center;
 }
 
 .section5 h2 {
@@ -456,16 +440,7 @@ main {
 .container-1 {
     display: flex;
     flex-direction: column;
-    width: 318px;
-}
-
-.container-2 {
-    width: 318px;
-}
-
-.container-3 {
-    width: 318px;
-    
+    /* width: 318px; */
 }
 
 .section5 .tombol {
@@ -489,6 +464,10 @@ main {
     border: none;
     text-decoration: none;
     transition: 0.3s;
+}
+
+.section5 .tombol a:hover {
+    transform: scale(0.9);
 }
 
 /* Blog */
@@ -600,17 +579,18 @@ footer p  {
     }
 
     .navbar .navbar-kontak a {
-        color: white;
-        background-color: #DB503B;
-        border-color: white;
-        border-radius: 0.5rem;
-        color: white;
-        padding: 0.5rem 1rem;
+        color: #DB503B;
+        padding: 1rem 2rem;
         font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-        font-size: 1rem;
+        font-weight: 400;
+        font-size: 1.3rem;
         border: 0.3rem solid white;
         text-decoration: none;
+    }
+
+    .navbar .navbar-kontak a:hover {
+        color: #DB503B;
+        background-color: white;
     }
 
     .navbar .bar {
@@ -643,9 +623,7 @@ footer p  {
     .navbar .navbar-nav a::after {
         content: '';
         display: block;
-        /* padding-bottom: 0; */
         border-bottom: 0.2rem solid #DB503B;
-        /* transform: scaleX(0); */
         transform-origin: 0 0;
         transition: 0.2s linear;
     }
@@ -665,35 +643,95 @@ footer p  {
 
 
 
-    /* HERO SECTION */
+    /* HERO Section */
     .section1 {
-        min-height: auto;
-        margin-bottom: 1%;
-        padding: 0;
+        min-height: 50vh;
+        padding-top: 5%;
     }
-
 
     .section1 h1 {
+        width: 650px;
+        word-wrap: break-word;
         font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: -1%;
     }
-    /* HERO SECTION */
+
+    /* HERO Section */
 
     /* REPORT SECTION */
     .section2 {
-        min-height: auto;
+        height: 40vh;
+        margin-top: -10%;
+    }
+
+    .section2 .container .box-container-2 .box .p2 {
+        font-size: 4rem;
+    }
+
+    .section2 .container .rating-dan-cta .rating i {
+        font-size: 2rem;
     }
     /* REPORT SECTION */
 
     /* ABOUT SECTION */
     #about {
-        min-height: 60vh;
+        min-height: 35vh;
     }
 
+    .about .container .flex {
+        min-height: 30vh;
+        flex-wrap: wrap;
+    }
+
+    .about .container h2 {
+        font-size: 3rem;
+    }
 
     .about .description p {
-        font-size: 1rem;
+        font-size: 1.3rem;
+        padding-right: 15%;
     }
     /* ABOUT SECTION */
+
+
+    /* DESTINASI SECTION */
+    .section3 {
+        min-height: 20vh;
+        align-items: center;
+    }
+
+    .section3 h2 {
+        font-size: 3rem;
+    }
+    /* DESTINASI SECTION */
+
+
+    /* KONTAK SECTION */
+    .section4 h2 {
+        font-size: 3rem;
+        margin-bottom: 5%; 
+    }
+    /* KONTAK SECTION */
+
+
+    /* BLOG SECTION */
+    .section5 h2 {
+        font-size: 3rem;
+        margin-bottom: 5%; 
+
+    }
+
+    .section5 .blog-container p{
+        font-size: 1.3rem;
+    }
+
+    .section5 .blog-container img{
+        height: 150px;
+    }
+    /* BLOG SECTION */
+
+
 
 
 
@@ -719,8 +757,9 @@ footer p  {
     .navbar .navbar-logo img {
         height: 30px;
     }
-
+    
     .navbar .bar {
+        margin-left: 2rem;
         flex: 1;
         text-align:  end;
     }
@@ -744,6 +783,10 @@ footer p  {
     #menu-bar {
         color: white;
         font-size: 24px;
+    }
+
+    #kontak {
+        display: none;
     }
     /* NAVBAR */
 

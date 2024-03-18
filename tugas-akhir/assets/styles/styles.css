@@ -121,6 +121,7 @@ main {
     align-items: center;
     margin: 0;
     padding: 0;
+    overflow: auto;
 }
 
 /* Hero Section */
@@ -294,6 +295,16 @@ main {
 /* Section 2 */
 
 /* About */
+.about {
+    min-height: 50vh;
+    overflow: auto;
+}
+
+.about .container {
+    float: left;
+    width: 75%;
+}
+
 .flex {
     display: flex;
     align-items: center;
@@ -323,6 +334,41 @@ main {
 
 .about .description p {
     text-align: justify;
+}
+
+
+.about aside {
+    background-color: #DB503B;
+    float: right;
+    width: 25%;
+    height: 50vh;
+}
+
+.about aside article {
+    text-align: center;
+}
+
+.about aside article h2 {
+    font-size: 2rem;
+}
+
+.about aside article header img {
+    height: 11rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about aside section table {
+    margin: 0 5%;
+}
+
+.about aside section table tr th {
+    text-align: start;
+    margin-right: 1.3rem;
+}
+
+.about aside section table tr td {
+    text-align: start;
 }
 /* About */
 
@@ -548,6 +594,15 @@ footer p  {
 
     .about .description p {
         font-size: 1.4rem;
+    }
+
+    .about .container {
+        float: none;
+        width: 100%;
+    }
+
+    .about aside{
+        display: none;
     }
     /* About */
 

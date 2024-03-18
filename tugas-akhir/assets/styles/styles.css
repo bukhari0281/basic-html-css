@@ -2,6 +2,7 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
+    box-sizing: border-box;
 }
 
 body {
@@ -604,12 +605,12 @@ footer p  {
         background-color: #fff;
         width: 20rem;
         height: 100vh;
+        display: block;
         transition: 0.3s;
     }
 
     .navbar .navbar-nav.active {
         display: block;
-        /* padding: 1rem 2rem; */
         right: 0;
     }
 
@@ -743,60 +744,89 @@ footer p  {
     }
 
     /* NAVBAR */
-    .navbar {
-        display: flex;
-        align-items: center;
-        min-height: 70px;
-    }
 
-    .navbar .navbar-logo {
-        flex: 1;
-        text-align: start;
-    }
-
-    .navbar .navbar-logo img {
-        height: 30px;
-    }
-    
-    .navbar .bar {
-        margin-left: 2rem;
-        flex: 1;
-        text-align:  end;
-    }
-
-    .navbar .navbar-nav {
-        display: block;
-        text-align: start;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background-color: #fff;
-        width: 150px;
-        padding: 1rem 2rem;
-    }
-
-    .navbar .navbar-nav a {
-        font-size: 22px;
-        color: #DB503B;
-    }
-    
-    #menu-bar {
-        color: white;
-        font-size: 24px;
-    }
-
-    #kontak {
+    .navbar .navbar-kontak a {
         display: none;
     }
     /* NAVBAR */
 
+    /* HERO SECTION */
+    .section1 {
+        min-height: 60vh;
+    }
+    .section1 h1 {
+        font-size: 2rem;
+        width: 300px;
+        word-wrap: break-word;
+    }
+    /* HERO SECTION */
+
+    /* REPORT SECTION */
+    .section2 {
+        min-height: 80vh; 
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+    /* REPORT SECTION */
 
     /* ABOUT SECTION */
+    .about .container .flex .image {
+        margin-right: 45px;
+        margin-block: 5%;
+    }
+    
+    .about .description p {
+        margin: 0 25px;
+        padding: 0;
+    }
+
     .about .container .flex {
         flex-wrap: wrap;
     }
-
-
     /* ABOUT SECTION */
+
+    /* DESTINASI SECTION */
+    .section3 {
+        margin: 10% 0;
+    }
+
+    .section3 .img-destinasi {
+        flex-wrap: wrap;
+        margin: 0 25px;
+    }
+    /* DESTINASI SECTION */
+
+    /* KONTAK SECTION */
+    .section4 .contact-container {
+        flex-wrap: wrap;
+        
+    }
+    /* KONTAK SECTION */
+
+    /* BLOG SECTION */
+    .section5 .blog-container {
+        flex-wrap: wrap;
+        
+    }
+    /* BLOG SECTION */
+
+    /* FOOTER */
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .sosmed {
+        margin: 0 10px;
+    }
+
+    footer p {
+        font-size: 1rem;
+        margin-top: -5rem;
+    }
+    /* FOOTER */
 
 }

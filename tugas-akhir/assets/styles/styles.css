@@ -283,9 +283,9 @@ main {
     display: flex;
     align-items: center;
     min-height: 50vh;
-    margin: 5% 0;
-    color: #DB503B;
-    background-color: #FFFCF2;
+    margin: 0 0 5% 0;
+    color: #FFFCF2;
+    /* background-color: #FFFCF2; */
 }
 
 .about .image {
@@ -300,6 +300,10 @@ main {
 
 .about .image img {
     width: 100%;
+}
+
+.about .container h2 {
+    margin-bottom: 0;
 }
 
 .about .description p {
@@ -325,6 +329,7 @@ main {
     display: flex;
     flex-direction: row;
     gap: 1.2rem;
+    justify-content: center;
 }
 
 .img-destinasi img {
@@ -348,7 +353,6 @@ main {
 .image-4 {
     text-align: center;
 }
-
 /* Destinasi */
 
 /* Kontak Section */
@@ -520,10 +524,18 @@ footer p  {
 
     /* HERO Section */
     .section1 {
-        height: 50vh;
-        font-size: 74%;
-        /* margin-bottom: 1%;    */
+        min-height: 70vh;
+        padding-top: 5%;
     }
+
+    .section1 h1 {
+        width: 650px;
+        word-wrap: break-word;
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: -1%;
+    }
+
     /* HERO Section */
 
     /* REPORT Section */
@@ -550,9 +562,9 @@ footer p  {
         min-height: 60vh;
     }
 
-    .about .image img {
+    /* .about .image img {
         width: 600px;
-    }
+    } */
 
     .about .description p {
         font-size: 1.4rem;
@@ -561,7 +573,7 @@ footer p  {
 
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 920px) {
     html {
         font-size: 60%;
     }
@@ -587,7 +599,7 @@ footer p  {
         justify-content: end;
     }
 
-    .navbar-kontak a {
+    .navbar .navbar-kontak a {
         color: white;
         background-color: #DB503B;
         border-color: white;
@@ -596,7 +608,7 @@ footer p  {
         padding: 0.5rem 1rem;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
-        font-size: 16px;
+        font-size: 1rem;
         border: 0.3rem solid white;
         text-decoration: none;
     }
@@ -654,14 +666,40 @@ footer p  {
 
 
     /* HERO SECTION */
+    .section1 {
+        min-height: auto;
+        margin-bottom: 1%;
+        padding: 0;
+    }
+
+
     .section1 h1 {
         font-size: 3rem;
     }
     /* HERO SECTION */
 
+    /* REPORT SECTION */
+    .section2 {
+        min-height: auto;
+    }
+    /* REPORT SECTION */
+
+    /* ABOUT SECTION */
+    #about {
+        min-height: 60vh;
+    }
+
+
+    .about .description p {
+        font-size: 1rem;
+    }
+    /* ABOUT SECTION */
+
+
+
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 430px) {
     html {
         font-size: 55%;
     }
@@ -708,4 +746,14 @@ footer p  {
         font-size: 24px;
     }
     /* NAVBAR */
+
+
+    /* ABOUT SECTION */
+    .about .container .flex {
+        flex-wrap: wrap;
+    }
+
+
+    /* ABOUT SECTION */
+
 }
